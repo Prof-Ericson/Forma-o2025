@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #006400;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seções principais */
+main {
+  margin: 20px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.highlights ul,
+.quick-links ul {
+  list-style: disc inside;
+}
+
+.donate {
+  text-align: center;
+}
+
+.donate-button {
+  display: inline-block;
+  background-color: #2e8b57;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.donate-button:hover {
+  background-color: #006400;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2e8b57;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.back-to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-to-top:hover {
+  background-color: #004d00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .back-to-top {
+    position: static;
+    margin-top: 10px;
+  }
+}
